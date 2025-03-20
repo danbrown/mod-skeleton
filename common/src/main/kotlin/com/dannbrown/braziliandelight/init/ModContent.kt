@@ -8,11 +8,11 @@ object ModContent {
   const val MOD_ID = "braziliandelight"
   var REGISTRATE = DeltaboxRegistrate(MOD_ID)
 
-  val TAB = REGISTRATE.creativeTab(MOD_ID, "Brazilian Delight", { ItemStack(ModItems.MOD_ICON.get()) }, { p, o ->
-    CreativeTabsUtil.displayAll(
-      REGISTRATE, p, o
-    )
-  })
+//  val TAB = REGISTRATE.creativeTab(MOD_ID, "Brazilian Delight", { ItemStack(ModItems.MOD_ICON.get()) }, { p, o ->
+//    CreativeTabsUtil.displayAll(
+//      REGISTRATE, p, o
+//    )
+//  })
 
   fun init() {
     ModConfig.register()

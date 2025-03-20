@@ -4,9 +4,7 @@
   "version": "${mod_version}",
   "name": "${mod_name}",
   "description": "${mod_description}",
-  "authors": [
-    "${mod_authors}"
-  ],
+  "authors": ["${mod_authors}"],
   "contact": {
     "sources": "${mod_source}"
   },
@@ -26,24 +24,16 @@
         "value": "com.dannbrown.${mod_id}.fabric.init.ModContentFabric"
       }
     ],
-    "terrablender": [
-      {
-        "adapter": "kotlin",
-        "value": "com.dannbrown.${mod_id}.fabric.init.ModContentFabric"
-      }
-    ],
     "fabric-datagen": [
       "com.dannbrown.${mod_id}.fabric.init.ModContentDatagenFabric"
     ]
   },
-  "mixins": [
-    "${mod_id}-common.mixins.json",
-    "${mod_id}.mixins.json"
-  ],
+  "mixins": ["${mod_id}-common.mixins.json", "${mod_id}.mixins.json"],
   "depends": {
     "fabric": "*",
     "minecraft": "${minecraft_version_range}",
     "fabric-language-kotlin": "${fabric_kotlin_version_range}",
-    "architectury": "${architectury_version_range}",
+    "architectury": "${architectury_version_range}"
   }
 }
+
